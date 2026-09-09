@@ -39,7 +39,7 @@ export default function Login() {
 
     return (
         <form
-            className="w-2xl p-10 bg-slate-600 rounded-lg space-y-5 shadow-lg"
+            className="w-xl p-10 bg-slate-700 rounded-lg space-y-5 shadow-lg"
             onSubmit={handleSubmit}
         >
             <legend className="text-3xl font-bold text-white uppercase text-center">Insion de sesion</legend>
@@ -55,8 +55,8 @@ export default function Login() {
                     type="text"
                     id="user"
                     name="user"
-                    className="border border-slate-300 w-full p-2 rounded-sm"
-                    placeholder="digita tu usurio"
+                    className="border border-slate-300 w-full p-2 rounded-sm text-white"
+                    placeholder="Digita el usuario"
                     value={usuario.user}
                     onChange={handleChange}
                 />
@@ -68,7 +68,7 @@ export default function Login() {
                     type="password"
                     id="password"
                     name="password"
-                    className="border border-slate-300 w-full p-2 rounded-sm"
+                    className="border border-slate-300 w-full p-2 rounded-sm text-white"
                     placeholder="Digita tu contraseña"
                     value={usuario.password}
                     onChange={handleChange}
