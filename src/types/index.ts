@@ -1,6 +1,6 @@
 
 
-export type usuario = {
+export type Usuario = {
     user: string,
     password: string
 }

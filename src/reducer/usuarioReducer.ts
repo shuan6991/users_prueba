@@ -1,13 +1,13 @@
-import type { usuario } from "../types"
+import type { Usuario } from "../types"
 
 
 
 export type UserActions = 
-{type:'validar-sesion', payload:{usuario: usuario}}
+{type:'validar-sesion', payload:{usuarioDB: Usuario}}
 
 
 export type UserState = {
-    usuario: usuario[]
+    usuario: Usuario[]
 }
 
 
@@ -24,7 +24,7 @@ export const usuarioReducer = (
 
     if(action.type === 'validar-sesion'){
         return{
-            usuario: [action.payload.usuario]
+            usuario: [action.payload.usuarioDB]
         }
     }
 

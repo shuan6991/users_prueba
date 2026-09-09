@@ -5,3 +5,11 @@ export const obtenerUsuarios = async()=>{
 
     return rows
 }
+
+
+export const validarUsuario = async(user, password)=>{
+
+    const [rows] = await pool.query(`SELECT user, password FROM users WHERE user = '${user}' AND password = '${password}'`)
+
+    return rows
+}

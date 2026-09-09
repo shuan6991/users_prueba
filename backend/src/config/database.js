@@ -5,7 +5,7 @@ const pool = createPool({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'users_pruebas'
+    database: 'users_prueba'
     
 })
 
